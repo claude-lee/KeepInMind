@@ -1,5 +1,6 @@
-Server Access, DNS
-
+***********************************************************
+* Server Access, DNS
+***********************************************************
 ping vltpolo1-t21
 ping: unknown host vltpolo1-t21
 
@@ -10,3 +11,31 @@ nameserver 10.118.51.187
 nameserver 10.119.31.186
 
 resolv.conf is a file used in various operating systems to configure the system's Domain Name System (DNS) resolver. 
+
+***********************************************************
+* Troubleshoot Port connection
+***********************************************************
+
+# netstat -a
+Active Internet connections (servers and established)
+Proto     Recv-Q     Send-Q      Local Address       Foreign Address    State
+tcp       0          0           localhost:60782     localhost:1528     ESTABLISHED
+
+
+TCP port 1528 is closed for IP/host
+
+[root@vltilla2-eth0 ~]# nmap -p  1528 12.151.50.92
+Starting Nmap 5.51 ( http://nmap.org ) at 2015-11-18 17:59 CET
+Nmap scan report for 12.151.50.92
+Host is up (0.000094s latency).
+PORT     STATE  SERVICE
+1528/tcp closed mciautoreg
+Nmap done: 1 IP address (1 host up) scanned in 6.60 seconds
+
+[root@vltilla2-eth0 ~]# nmap -p 1528 vfrggv2.ci.hh.fde.com
+Starting Nmap 5.51 ( http://nmap.org ) at 2015-11-18 18:09 CET
+Nmap scan report for vfrggv2.ci.hh.fde.com (12.151.50.92)
+Host is up (0.000091s latency).
+PORT     STATE  SERVICE
+1528/tcp closed mciautoreg
+Nmap done: 1 IP address (1 host up) scanned in 6.61 seconds
