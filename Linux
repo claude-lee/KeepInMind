@@ -39,3 +39,14 @@ Host is up (0.000091s latency).
 PORT     STATE  SERVICE
 1528/tcp closed mciautoreg
 Nmap done: 1 IP address (1 host up) scanned in 6.61 seconds
+
+IP TABLES
+
+iptables -A OUTPUT -p tcp --dport 60782 -j ACCEPT
+iptables -A INPUT -p tcp --dport 60782 -j ACCEPT
+[root@vltilla2-eth0 ~]# /etc/init.d/iptables restart
+iptables: Setting chains to policy ACCEPT: filter          [  OK  ]
+iptables: Flushing firewall rules:                         [  OK  ]
+iptables: Unloading modules:                               [  OK  ]
+iptables: Applying firewall rules:                         [  OK  ]
+iptables-save
