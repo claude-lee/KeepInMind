@@ -1,0 +1,5 @@
+ipconfig /renew
+
+tracert 141.1.1.1
+
+ping 141.1.1.1
