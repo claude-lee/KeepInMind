@@ -3,3 +3,12 @@ ipconfig /renew
 tracert 141.1.1.1
 
 ping 141.1.1.1
+
+
+WGET on windows git bash:
+#########################
+- download: https://sourceforge.net/projects/mingw/?source=typ_redirect
+- unpack
+- create ~/bin directory
+- move wget.exe to ~/bin
+- now you are able to run wget from your windows git bash command line
