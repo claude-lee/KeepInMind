@@ -50,3 +50,9 @@ iptables: Flushing firewall rules:                         [  OK  ]
 iptables: Unloading modules:                               [  OK  ]
 iptables: Applying firewall rules:                         [  OK  ]
 iptables-save
+
+#######################################################################
+Change the keyboard layout to Swedish:
+
+setxkbmap -layout se
+#######################################################################
