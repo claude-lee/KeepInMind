@@ -56,3 +56,11 @@ Change the keyboard layout to Swedish:
 
 setxkbmap -layout se
 #######################################################################
+Curl to upload a file
+
+curl --upload-file filename.war http://hostname.com/path/filename.war
+#######################################################################
+Curl to download a file
+
+curl -O http://hostname.com/path/filename.war
+#######################################################################
