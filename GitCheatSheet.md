@@ -26,3 +26,9 @@ CLIP < /Users/you/.ssh/id_rsa.pub
 git config --global credential.helper wincred
 ```
 Git bash will not ask for your credentials when pushing to Github.
+
+### Pull in submodules
+```
+git submodule foreach git pull origin master
+git submodule update
+```
