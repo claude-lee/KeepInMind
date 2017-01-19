@@ -68,3 +68,7 @@ Create tar with multiple directories and file locations
 
 tar -czf myfile.tar.gz /etc/dir1 /var/www/html /home/somedir
 #######################################################################
+Ubuntu uninstall something
+
+sudo aptitude purge git-crypt
+#######################################################################
