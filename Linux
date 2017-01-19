@@ -64,3 +64,7 @@ Curl to download a file
 
 curl -O http://hostname.com/path/filename.war
 #######################################################################
+Create tar with multiple directories and file locations
+
+tar -czf myfile.tar.gz /etc/dir1 /var/www/html /home/somedir
+#######################################################################
