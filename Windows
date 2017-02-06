@@ -5,6 +5,8 @@ tracert 141.1.1.1
 ping 141.1.1.1
 
 
+
+#####################################################
 WGET on windows git bash:
 #########################
 - download: https://sourceforge.net/projects/mingw/?source=typ_redirect
@@ -12,3 +14,16 @@ WGET on windows git bash:
 - create ~/bin directory
 - move wget.exe to ~/bin
 - now you are able to run wget from your windows git bash command line
+
+
+################################
+problems being able getting pinged?
+Make sure that the Firewall rule "File and Printer Sharing (Echo Request - ICMPv4-In)" is enabled.
+Without that all ping reuests will be ignored.
+
+
+################################
+
+
+
+
