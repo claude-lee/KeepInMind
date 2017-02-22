@@ -23,7 +23,12 @@ Without that all ping reuests will be ignored.
 
 
 ################################
+Computer Name?
+In order to find out your computer name you can use nslookup:
+$ nslookup 10.100.102.43
+Server:  dc-vm.rz.company.de
+Address:  10.100.38.50
 
-
-
-
+Name:    sto-clei.rz.company.de
+Address:  10.100.102.43
+################################
