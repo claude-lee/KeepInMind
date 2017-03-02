@@ -72,3 +72,7 @@ Ubuntu uninstall something
 
 sudo aptitude purge git-crypt
 #######################################################################
+Print from ubuntu
+
+lp /path/to/file.log
+#######################################################################
